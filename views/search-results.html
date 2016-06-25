@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="sampleApp">
+<head>
+    <title></title>
+    <link href="Css/WorldSync.css" rel="stylesheet" />
+    <link href="Jscript/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="Jscript/jquery-1.11.3.min.js"></script>
+    <script src="Jscript/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+      <!-- load angular via CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>    
+    <script src="Jscript/app.js"></script>
+</head>
+<body ng-controller="mainController">
+    <header>
+        <div class="container" style="width: 970px !important; padding-top: 10px">
+            <!--<nav class="navbar navbar-Custom">-->
+            <div class="container-fluid" style="float:left;">
+                <div class="navbar-header">
+                    <div class="navbar-header">
+                        <img src="Images/logo.png" />
+                    </div>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#NavMenu" aria-expanded="false">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="NavMenu" style="float:right">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><label style="color:#004800;font-size:12px;font-weight:bold;padding-top:17px">Home</label></li>
+                    <li style="padding-left: 5px; padding-right: 5px; padding-top: 15px">|</li>
+                    <li style="padding-top: 15px"><input type="text" value="FIND PRODUCTS" style="color: #004800; font-size: 11px; width: 150px" /></li>
+                    <li><a href="#"><img src="Images/eyeglass.png" /></a></li>
+                </ul>
+            </div>
+            <!--</nav>-->
+        </div>
+    </header>
+    <div class="container" style="background-image:url('Images/bacground.png');background-repeat:no-repeat;margin:auto;width:970px !important;height:500px">
+        <div style="height:20px">
+        </div>
+        <div class="col-sm-12" align="left">
+            <label style="font-size: 40px; color: #5c5b5b;font-family:Arial">Search Results</label>
+        </div>
+        <div style="height:50px">
+        </div>
+        <div class="col-sm-12" align="left">
+            <div style="float:left">
+                <span style="float:left">
+                    <label id="lblResults">3 Results for</label>
+                </span>
+                <span style="float:left">
+                    <a style="color:#00acc8;font-size:12px">&nbsp;"Diet Pepsi"</a>
+                </span>
+            </div>
+        </div>
+        <div style="height:10px">
+        </div>
+        <div style="padding:40px;">
+            <div class="col-sm-12" align="left" style="background-color:#00acc8;height:50px;width:100%">
+                <div style="float:left;width:22%;">
+                    <label style="color:white;font-size:12px;padding-top:15px">Brand Name</label>
+                </div>
+                <div style="float:left;padding-left:10px;padding-right:10px">
+                    <div style="background-color: white; width: 1px; height:50px; outline: none; border: none"></div>
+                </div>
+                <div style="float: left; width: 22%; ">
+                    <label style="color: white; font-size: 12px; padding-top: 15px">GTN/UPC</label>
+                </div>
+                <div style="float: left; padding-left: 10px; padding-right: 10px">
+                    <div style="background-color: white; width: 1px; height: 50px; outline: none; border: none"></div>
+                </div>
+                <div style="float: left; width: 22%">
+                    <label style="color: white; font-size: 12px; padding-top: 15px">Company Name</label>
+                </div>
+                <div style="float: left; padding-left: 10px; padding-right: 10px; ">
+                    <div style="background-color: white; width: 1px; height: 50px; outline: none; border: none"></div>
+                </div>
+                <div style="float:left;width:22%">
+                    <label style="color: white; font-size: 12px; padding-top: 15px">URLs</label>
+                </div>
+            </div>
+            <div class="col-sm-12" align="left" style="background-color: #dddadb; height: 50px; width: 100%">
+                <div style="float:left;width:22%">
+                    <label style="color: #5c5b5b; font-size: 12px; padding-top: 15px; ">Diet Pepsi Cola</label>
+                </div>
+                <div style="float:left;padding-left:10px;padding-right:10px">
+                    <div style="background-color: white; width: 1px; height:50px; outline: none; border: none"></div>
+                </div>
+                <div style="float: left; width: 22%;">
+                    <label style="color: #5c5b5b; font-size: 12px; padding-top: 15px; ">12345678</label>
+                </div>
+                <div style="float: left; padding-left: 10px; padding-right: 10px">
+                    <div style="background-color: white; width: 1px; height: 50px; outline: none; border: none"></div>
+                </div>
+                <div style="float: left; width: 22%">
+                    <label style="color: #5c5b5b; font-size: 12px; padding-top: 15px; ">Pepsi Bottling Company</label>
+                </div>
+                <div style="float: left; padding-left: 10px; padding-right: 10px; ">
+                    <div style="background-color: white; width: 1px; height: 50px; outline: none; border: none"></div>
+                </div>
+                <div style="float:left;width:22%" align="center">
+                    <img src="Images/Smart%20Label%20logo-2.png" />
+                </div>
+            </div>
+            <div class="col-sm-12" align="left" style="background-color: #f1eff0; height: 50px; width: 100%">
+                <div style="float:left;width:22%">
+                    <label style="color: #5c5b5b; font-size: 12px; padding-top: 15px; ">Diet Pepsi Cola</label>
+                </div>
+                <div style="float:left;padding-left:10px;padding-right:10px">
+                    <div style="background-color: white; width: 1px; height:50px; outline: none; border: none"></div>
+                </div>
+                <div style="float: left; width: 22%;">
+                    <label style="color: #5c5b5b; font-size: 12px; padding-top: 15px; ">12345678</label>
+                </div>
+                <div style="float: left; padding-left: 10px; padding-right: 10px">
+                    <div style="background-color: white; width: 1px; height: 50px; outline: none; border: none"></div>
+                </div>
+                <div style="float: left; width: 22%">
+                    <label style="color: #5c5b5b; font-size: 12px; padding-top: 15px; ">Pepsi Bottling Company</label>
+                </div>
+                <div style="float: left; padding-left: 10px; padding-right: 10px; ">
+                    <div style="background-color: white; width: 1px; height: 50px; outline: none; border: none"></div>
+                </div>
+                <div style="float:left;width:22%" align="center">
+                    <img src="Images/EUlogo.png" />
+                </div>
+            </div>
+            <div class="col-sm-12" align="left" style="background-color: #dddadb; height: 50px; width: 100%">
+                <div style="float:left;width:22%">
+                    <label style="color: #5c5b5b; font-size: 12px; padding-top: 15px; ">Diet Pepsi Cola</label>
+                </div>
+                <div style="float:left;padding-left:10px;padding-right:10px">
+                    <div style="background-color: white; width: 1px; height:50px; outline: none; border: none"></div>
+                </div>
+                <div style="float: left; width: 22%;">
+                    <label style="color: #5c5b5b; font-size: 12px; padding-top: 15px; ">12345678</label>
+                </div>
+                <div style="float: left; padding-left: 10px; padding-right: 10px">
+                    <div style="background-color: white; width: 1px; height: 50px; outline: none; border: none"></div>
+                </div>
+                <div style="float: left; width: 22%">
+                    <label style="color: #5c5b5b; font-size: 12px; padding-top: 15px; ">Pepsi Bottling Company</label>
+                </div>
+                <div style="float: left; padding-left: 10px; padding-right: 10px; ">
+                    <div style="background-color: white; width: 1px; height: 50px; outline: none; border: none"></div>
+                </div>
+                <div style="float:left;width:22%" align="center">
+                    <img src="Images/safetylogo.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height:50px;background-color:#666;width:970px;" class="container">
+    </div>
+</body>
+</html>

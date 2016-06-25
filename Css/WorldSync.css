@@ -1,0 +1,54 @@
+﻿body {
+    font-family:Arial;
+}
+
+.bodybg {
+    background-image: url('../Images/bacground.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 90% 1000px;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+.height10px {
+    height: 10px;
+}
+
+.height20px {
+    height: 20px;
+}
+
+.height5px {
+    height: 5px;
+}
+
+.tdHeading {
+    color: #5c5b5b;
+    font-size: 18px;
+}
+
+.tdContent {
+    color: #5c5b5b;
+    font-size: 12px;
+}
+
+.txtbgColor {
+    background-color: #dfe6ef;
+    height: 40px;
+    width: 100%;
+}
+
+.btnGreen {
+    background-color: #004800;
+    height: 30px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    text-align: center;
+    padding-top: 5px;
+}
