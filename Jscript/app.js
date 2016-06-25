@@ -1,20 +1,20 @@
-var sampleApp = angular.module('sampleApp', []);
+var sampleApp = angular.module('sampleApp', ['ngRoute']);
 
 sampleApp.config(function($routeProvider) {
     $routeProvider
 
         .when('/index', {
-            templateUrl : 'views/register.html',
+            templateUrl : '../views/register.html',
             controller  : 'mainController'
         })
 
         .when('/register', {
-            templateUrl : 'views/register.html',
+            templateUrl : '../views/register.html',
             controller  : 'mainController'
         })
 
         .when('/search', {
-            templateUrl : 'views/search-results.html',
+            templateUrl : '../views/search-results.html',
             controller  : 'mainController'
         });
 });

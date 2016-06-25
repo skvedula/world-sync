@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app="sampleApp">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
     <link href="Css/WorldSync.css" rel="stylesheet" />
@@ -8,11 +8,59 @@
     <script src="Jscript/bootstrap-3.3.5/js/bootstrap.min.js"></script>
       <!-- load angular via CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>    
+    <script src="https:///ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>    
     <script src="Jscript/app.js"></script>    
 </head>
-<body ng-controller="mainController">
-    <!-- MAIN CONTENT AND INJECTED VIEWS -->
-        <div ng-view></div>
+<body ng-app="sampleApp" ng-controller="mainController">
+    <header>
+        <div class="container" style="width: 970px !important; padding-top: 10px">
+            <!--<nav class="navbar navbar-Custom">-->
+            <div class="container-fluid" style="float:left;">
+                <div class="navbar-header">
+                    <div class="navbar-header">
+                        <img src="Images/logo.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse paddingtop20px" id="NavMenu" style="float:right">
+                <ul class="nav navbar-nav navbar-right">
+                    <li style="padding-top: 15px"><input type="text" value="FIND PRODUCTS" style="color: #004800; font-size: 11px; width: 150px" /></li>
+                    <li><a href="#"><img src="Images/eyeglass.png" /></a></li>
+                </ul>
+            </div>
+            <!--</nav>-->
+        </div>
+    </header>
+    <div ng-view></div>
+    <div style="height:50px;background-color:#666;width:970px;" class="container">
+        <div style="float:left">
+            <label style="color:white">HELP:support@worldsync.com</label>
+        </div>
+        <div style="float:right">
+            <div>
+                <div style="float:left">
+                    <a style="color:white">Privacy Policy</a>
+                </div>
+                <div style="float:left">
+                    <label style="padding-left:5px;padding-right:5px">|</label>
+                </div>
+                <div style="float:left">
+                    <a style="color:white">Terms & Conditions</a>
+                </div>
+                <div style="float:left">
+                    <label style="padding-left:5px;padding-right:5px">|</label>
+                </div>
+                <div style="float:left">
+                    <a style="color:white">Antitrust Statement</a>
+                </div>
+            </div>
+            <div style="clear:both;height:5px">
+                &nbsp;
+            </div>
+            <div style="float:right">
+                <label style="padding-left:5px;padding-right:5px">1Worldsync.All Rights Reserved.</label>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
